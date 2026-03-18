@@ -25,7 +25,7 @@ class MultipleMatchesException extends NameParsingException
     /**
      * {@inheritdoc}
      */
-    public function __construct($message = null, $code = 0, \Throwable $previous = null)
+    public function __construct($message = null, $code = 0, ?\Throwable $previous = null)
     {
         parent::__construct($message ? $message : self::MESSAGE, $code, $previous);
     }
